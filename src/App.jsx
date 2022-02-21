@@ -129,7 +129,7 @@ answers:[
 
 {moneyPyramid.map(m=>(
 
-<li className={qNum === m.id ? "moneyListItem active " : "moneyListItem "}>
+<li  key={m.id} className={qNum === m.id ? "moneyListItem active " : "moneyListItem "}>
   <span className="moneyListItemNumber">{m.id}</span>
   <span className="moneyListItemAmount">{m.amount}</span>
 </li>  
